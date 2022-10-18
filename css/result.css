@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+.container
+{
+    margin : auto;
+    max-width:fit-content;
+    padding-top:0.8vw;
+    padding-right: none;
+}
+body{
+    background-color: #F0EFF4;
+}
+.linear
+{
+    background-color: #f8f8f8;;
+}
+#velammal{
+    font-size: 2vw;
+    font-weight: 800;
+    color: #C6C5B9;
+    display: inline-block;
+    padding-left: 21vw;
+    padding-top: 1vw;
+}
+#vcet
+{
+    display: none;
+}
+@media screen and (max-width : 1000px){
+    #velammal
+    {
+        display: none;
+    }
+    #vcet
+    {
+        font-size: 3vw;
+        font-weight: 800;
+        padding-left: 20vw;
+        color: #C6C5B9;
+        display: inline-block;
+        padding-top: 1.7vw;
+        text-align: center;
+    }
+   
+}
+@media screen and (max-width : 991px){
+}
+nav{
+    background-color: #393D3F;
+}
+#restable
+{
+    text-align: center;
+    
+}
+#endreshead
+{
+    font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:550;
+}
+#infotable td
+{
+    text-align: center;
+}
+
+.dets{
+
+  position: relative;
+  width:10rem;
+  
+
+}
+.dets::after
+{
+    content:":";
+    position: absolute;
+    right: 1rem;;
+}
+.gradeinfo
+{
+    text-align: center;
+    border : .7px solid rgb(212, 211, 211);
+}
+.gradeinfo:hover
+{
+    background-color: #e3e3e3;
+}

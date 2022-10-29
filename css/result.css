@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 .container
 {
@@ -8,8 +11,12 @@
     padding-top:0.8vw;
     padding-right: none;
 }
+#backbtn{ 
+    padding-left: 2px;
+    border :2px solid rgb(230, 230, 230);
+}
 body{
-    background-color: #F0EFF4;
+    background-color: #929292;
 }
 .linear
 {
@@ -20,31 +27,17 @@ body{
     font-weight: 800;
     color: #C6C5B9;
     display: inline-block;
-    padding-left: 21vw;
+    padding-left: 24vw;
     padding-top: 1vw;
+    text-align: center;
+}
+#endreshead
+{
+    font-size: 1.5vw;
 }
 #vcet
 {
     display: none;
-}
-@media screen and (max-width : 1000px){
-    #velammal
-    {
-        display: none;
-    }
-    #vcet
-    {
-        font-size: 3vw;
-        font-weight: 800;
-        padding-left: 20vw;
-        color: #C6C5B9;
-        display: inline-block;
-        padding-top: 1.7vw;
-        text-align: center;
-    }
-   
-}
-@media screen and (max-width : 991px){
 }
 nav{
     background-color: #393D3F;
@@ -54,36 +47,61 @@ nav{
     text-align: center;
     
 }
-#endreshead
-{
-    font-size:medium;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:550;
-}
+
 #infotable td
 {
     text-align: center;
 }
-
-.dets{
-
-  position: relative;
-  width:10rem;
-  
-
-}
-.dets::after
-{
-    content:":";
-    position: absolute;
-    right: 1rem;;
-}
 .gradeinfo
 {
     text-align: center;
-    border : .7px solid rgb(212, 211, 211);
+    border : 10px solid rgb(241, 241, 241);
 }
 .gradeinfo:hover
 {
     background-color: #e3e3e3;
 }
+@media(max-width: 370px){    
+    /* for pixel 5  */
+    *{ 
+    font-size: 12px
+    }}
+@media(max-width: 330px){    
+    /* for galaxy fold */
+    *{ 
+    font-size: 10px
+    }
+}
+@media screen and (max-width : 1000px){
+    #velammal
+    {
+        font-size: 3vw;
+        font-weight: 800;
+        color: #C6C5B9;
+        display: inline-block;
+        padding-top: 1.7vw;
+        text-align: center;
+        text-align: center;
+        padding-left:9vw;
+        margin-top: 1vw;
+    }
+   
+    #maincol
+    {
+        padding-left: 0vw;
+    }
+    #endreshead
+{
+    font-size: 1rem;
+}
+
+}
+@media screen and (max-width : 991px){
+    #maincol
+    {
+        padding-left: 5.8vw;
+    }
+}
+
+
+
